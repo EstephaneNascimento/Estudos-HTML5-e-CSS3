@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/* adcionar fontes  */
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+
+/* fonte baixada */
+@font-face{
+    font-family: 'Love';
+    /* format tipo de formato da fonte */
+    src: url('LoverlyRegularDemo.ttf') format('opentype');
+    font-weight: normal;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Classes */
+.texto{
+    font-size: x-large;
+    color:rgb(228, 111, 49);
+}
+/* usando ids */ 
+#main{ 
+    font-family: 'Smooch', cursive;;
+    text-align: center;
+
+}
+
+h1{
+    font-family: 'Love';
+}
+body{
+    /* criação de gradiente */
+    background-image: linear-gradient(to right,#B8C4BB,#C9D6EA,#E8F7EE );
+}
+
+main{
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+div h3{
+    text-align: center;
+}
+
+/* Pseudo classe */
+div:hover{
+    color: yellow
+}
+
+/* O filho não aparecerá */
+div > p {
+    display: none;
+}
+
+/* Quando passar o mouse pelo conteudo da div  */
+/* o que estiver dentro do p irá aparecer */
+div:hover > p {
+    display: block;
+    color: rgb(195, 9, 9);
+    background-color: rgba(20, 18, 24, 0.4);
+    align-items: center;
+}
+
+/* Trabalhando com pseudo elementos */
+
+/* Coloca algo depois o conteudo do content */
+h3::after{
+    content: '-->';
+}
+
+/* Coloca algo antes */
+h3::before{
+    content: '<--';
+}
